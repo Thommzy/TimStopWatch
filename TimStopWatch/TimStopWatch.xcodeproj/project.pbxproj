@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0471805C2670D24000687A3D /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471805B2670D24000687A3D /* StopWatchView.swift */; };
+		047180612670D5C200687A3D /* StopWatchUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047180602670D5C200687A3D /* StopWatchUnitView.swift */; };
+		047180672670D85100687A3D /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047180662670D85100687A3D /* String+Additions.swift */; };
 		049CE1652670D05A00CA2506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CE1642670D05A00CA2506 /* AppDelegate.swift */; };
 		049CE1672670D05A00CA2506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CE1662670D05A00CA2506 /* SceneDelegate.swift */; };
 		049CE1692670D05A00CA2506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CE1682670D05A00CA2506 /* ContentView.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0471805B2670D24000687A3D /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		047180602670D5C200687A3D /* StopWatchUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchUnitView.swift; sourceTree = "<group>"; };
+		047180662670D85100687A3D /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		049CE1612670D05A00CA2506 /* TimStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimStopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049CE1642670D05A00CA2506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049CE1662670D05A00CA2506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +86,17 @@
 			isa = PBXGroup;
 			children = (
 				0471805B2670D24000687A3D /* StopWatchView.swift */,
+				047180602670D5C200687A3D /* StopWatchUnitView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		047180652670D83D00687A3D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				047180662670D85100687A3D /* String+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		049CE1582670D05A00CA2506 = {
@@ -109,6 +122,7 @@
 		049CE1632670D05A00CA2506 /* TimStopWatch */ = {
 			isa = PBXGroup;
 			children = (
+				047180652670D83D00687A3D /* Extensions */,
 				0471805A2670D22F00687A3D /* Views */,
 				049CE1642670D05A00CA2506 /* AppDelegate.swift */,
 				049CE1662670D05A00CA2506 /* SceneDelegate.swift */,
@@ -279,7 +293,9 @@
 			files = (
 				049CE1652670D05A00CA2506 /* AppDelegate.swift in Sources */,
 				049CE1672670D05A00CA2506 /* SceneDelegate.swift in Sources */,
+				047180672670D85100687A3D /* String+Additions.swift in Sources */,
 				0471805C2670D24000687A3D /* StopWatchView.swift in Sources */,
+				047180612670D5C200687A3D /* StopWatchUnitView.swift in Sources */,
 				049CE1692670D05A00CA2506 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

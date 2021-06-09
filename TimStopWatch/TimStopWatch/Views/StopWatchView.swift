@@ -31,7 +31,18 @@ struct StopWatchView: View {
     
     //MARK:- BODY
     var body: some View {
-        Text("\(hours): \(minutes): \(seconds)")
+        HStack(spacing: 2, content: {
+            StopWatchUnitView(timeUnit: hours)
+            Text(":").bold()
+            StopWatchUnitView(timeUnit: minutes)
+            Text(":").bold()
+            StopWatchUnitView(timeUnit: seconds)
+            
+            
+        }).onAppear(perform: {
+            _ = timer
+        })
+        
     }
 }
 
